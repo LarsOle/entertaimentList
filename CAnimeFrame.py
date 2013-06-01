@@ -143,7 +143,7 @@ class CAnimeFrame(QFrame):
                 self.currentlyOperation()
 
     def fetchInformation(self):
-        information = FetchInformation(self.labels, "larsole12", "Shandra13")
+        information = FetchInformation(self.labels, "XXXXXX", "XXXXXXX")
         self.labels = information.fetchInformation()
         self.parent().parent().parent().parent().parent().parent().changeValue(self.labels, 0)
         self.labelComplete.setText("<b>Episodes: </b>" + self.labels[4])
